@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title> SiSi </title>
+ <!--the links i need for this--> 
+                <link rel="stylesheet" type="text/css" href="style1.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+                </script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                
+                <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <!--THE BUTTON THAT TAKES YOU BACK TO TOP-->
+         <script>
+    
+                // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+    
+         </script>
+    
+    
+                <!--    ADDING JQUERY TO TOGGLE ON AND OFF TEXT when you press the button HIDE ME ON THE LEFT CORNER-->
+                    <script>
+                            $(document).ready(function(){
+                             $('#button').click(function () {
+                                if ($('.text').is(':hidden')) {
+                                    $('.text').show();
+                                } else {
+                                    $('.text').hide();
+                                }
+                              }); 
+                            });
+            
+                    </script>
+              
+</head>  
+    
+<body>
+     <!--THE NAVIGATION BUTTONS--> 
+                     <nav>
+                       <ul>
+                        <li class="active"><a href="index.html">Sisi</a></li>
+                        <li><a href="story.html">The Story</a></li>
+                        <li><a href="then.html">The past</a></li>
+                        <li><a href="now.html">The present</a></li>
+                       </ul>
+                     </nav>
+    
+      <!--Header-->
+   
+                                       <h1>The story of a blind dog</h1>
+    
+      <!--PIC IN THE MIDDLE OF THE PAGE-->
+                               <div>
+                               <img class="float-img2 " src="pictures/6.jpg" style="width:400px;" alt="Picture of sisi my dog, on a snowy day"/> 
+                               </div>
+
+      <!--SISI'S DETAILS-->             
+                                        <h2>Sisi </h2>
+                                        <h2>  6 years old   </h2>
+                                        <h2> Born in 14/06/2012  </h2>
+                                        <h2> Jack russel terrier </h2>
+
+                
+                  
+    
+    
+    
+    
+      <!--THE TEXT THAT CAN BE TURNED ON AND OFF BY CLICKING ON THE LEFT HAND SIDE BUTTON: HIDE ME--> 
+    
+    
+
+            <h3 class="text">HELLLOOO!</h3>
+            <h3 class="text">My name is Sisi, am a playful little doggie that looooves to eat and sleep, and sometimes chew on toys my humans bought me, I have so many that sometimes I struggle choosing one to play with, so I play with 2 instead of one, why would I choose when I can have both? However my favourite ones have to be the bird toys that make a weird sound when I bite them, I still don’t understand why they make that noise but I love it and my humans seem to realize that too, which makes me very happy.</h3>
+            <h3 class="text"> I LOVE EATING did I mention that? I think I did, sometimes my humans hide the food from me I even heard one of them say I look like a sausage or that I eat too much, but am not fat, my coat is just puffy. However they buy my this “treats” as they call them which I looooooove they are delicious I could eat 10000000.</h3>
+            <h3 class="text"> I love my humans they always take care of me, they always want the best for me, sometimes they tease me by stealing my toys and making me jump for them, but I enjoy it, I love playing with them. I remember I had terrible eye pain that made me very sad I couldn’t eat, which you know I love, but one day my humans took me to a place and when I woke up, the pain was suddenly gone I could finally be happy again then the next sound I heard was my humans voice they were there too. Something seemed strange, the world was suddenly darker than usually, when I had eyes pain I could barely see my humans but now its different I can see them with my ears and heart.</h3>
+            <button id="button">Hide me</button>
+
+
+    
+    
+     <!--THE BUTTON THAT TAKES YOU BACK TO TOP once you click on it--> 
+    
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    
+    
+    
+</body>
+</html>
+    
+  

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    
+<head>
+    <meta charset="UTF-8">
+     <title> The present </title>
+    <!--the links i need for this--> 
+                    <link rel="stylesheet" type="text/css" href="style1.css">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!--THE BUTTON THAT TAKES YOU BACK TO TOP-->
+         <script>
+    
+                // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+    
+         </script>
+    
+<!--USING SOME INTERNAL STYLE: FELXIBLE BOX-->
+    <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+
+
+
+                    .row {
+                        display: -ms-flexbox; /* IE10 */
+                        display: flex;
+                        -ms-flex-wrap: wrap; /* IE10 */
+                        flex-wrap: wrap;
+                        padding: 0 4px;
+                    }
+
+                    /* Create four equal columns that sits next to each other */
+                    .column {
+                        -ms-flex: 25%; /* IE10 */
+                        flex: 25%;
+                        max-width: 25%;
+                        padding: 0 4px;
+                    }
+
+                    .column img {
+                        margin-top: 8px;
+                        vertical-align: middle;
+                    }
+
+                    /* Responsive layout - makes a two column-layout instead of four columns */
+                    @media (max-width: 800px) {
+                        .column {
+                            -ms-flex: 50%;
+                            flex: 50%;
+                            max-width: 50%;
+                        }
+                    }
+
+                    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                    @media (max-width: 600px) {
+                        .column {
+                            -ms-flex: 100%;
+                            flex: 100%;
+                            max-width: 100%;
+                        }
+                    }
+    </style>
+    
+</head>
+<body>
+        <!--THE NAVIGATION BUTTONS--> 
+                    <nav>
+                      <ul>
+                            <li><a href="index.html">Sisi</a></li>
+                            <li><a href="story.html">The Story</a></li>
+                            <li><a href="then.html">The past</a></li>
+                            <li class="active"><a href="now.html">The present</a></li>
+                      </ul>
+                    </nav>
+    
+    
+
+                    <!--Header-->
+                                            
+                                               <h1>I am blind. I see with my heart.</h1>
+                                        
+                    <!--TEXT-->
+    
+                    <p> Sisi is now living her days just like a normal dog, playing the same way, eating the same way and even walking on the leash. She does need extra encouragment sometimes so she feels safe, but she is a healthy, happy doggie and thats all that maters.</p>
+                    
+    
+    
+                    <!--Photo Grid with pictures and alt-->
+                    <div class="row"> 
+                      <div class="column">
+                        <img src="pictures/gg.jpg" style="width:100%" alt="Picture of sisi my dog, laying on cement">
+                        <img src="pictures/l.jpg" style="width:100%" alt="Picture of sisi my dog, while I hug hug her" >
+                        <img src="pictures/8.jpg" style="width:100%" alt="Picture of sisi my dogs foot print in snow" >
+                        <img src="pictures/c.jpg" style="width:100%" alt="Picture of sisi my dog, laying on me while I study">
+                        <img src="pictures/d.jpg" style="width:100%" alt="Picture of sisi my dog, sleeping">
+                        <img src="pictures/ff.jpg" style="width:100%" alt="Picture of sisi my dog, laying down">
+                        <img src="pictures/g.jpg" style="width:100%" alt="Picture of sisi my dog, hugging my arm">
+                        <img src="pictures/h.jpg" style="width:100%" alt="Picture of sisi my dog, hugging my arm">
+                       
+                      </div>
+                      <div class="column">
+                        <img src="pictures/j.jpg" style="width:100%" alt="Picture of sisi my dog, laying on me while she sleeps">
+                        <img src="pictures/k.jpg" style="width:100%" alt="Picture of sisi my dog, after she had a bath">
+                        <img src="pictures/aa.jpg" style="width:100%" alt="Picture of sisi my dog, looking around">
+                        <img src="pictures/6.jpg" style="width:100%" alt="Picture of sisi my dog, on a snowy day">
+                        <img src="pictures/dd.jpg" style="width:100%" alt="Picture of sisi my dog, looking at mom" >
+                        <img src="pictures/f.jpg" style="width:100%" alt="Picture of sisi my dog, sleeping on my bed">
+                        <img src="pictures/a.jpg" style="width:100%" alt="Picture of sisi my dog, hugging ">
+                      
+                      </div>  
+                      <div class="column">
+                        <img src="pictures/jj.jpg" style="width:100%" alt="Picture of sisi my dog, looking back to mom">
+                        <img src="pictures/3.jpg" style="width:100%" alt="Picture of sisi my dog, on a snowy day out">
+                        <img src="pictures/kk.jpg" style="width:100%" alt="Picture of sisi my dog, on a walk">
+                        <img src="pictures/ll.jpg" style="width:100%" alt="Picture of sisi my dog, walking">
+                        <img src="pictures/zz.jpg" style="width:100%" alt="Picture of sisi my dog, with a Santa hat">
+                        <img src="pictures/xx.jpg" style="width:100%" alt="Picture of sisi my dog, laying on grass">
+                        <img src="pictures/19.jpg" style="width:100%" alt="Picture of sisi my dog, sleeping on my legs">
+                      
+                       
+                      </div>
+                      <div class="column">
+                        <img src="pictures/bb.jpg" style="width:100%" alt="Picture of sisi my dog, laying on grass">
+                        <img src="pictures/nn.jpg" style="width:100%" alt="Picture of sisi my dog, laying on grass">
+                        <img src="pictures/mm.jpg" style="width:100%" alt="Picture of sisi my dog, sniffing">
+                        <img src="pictures/vv.jpg" style="width:100%" alt="Picture of sisi my dog, laying down">
+                        <img src="pictures/8.jpg" style="width:100%" alt="Picture of sisi my dogs foot prints">
+                        <img src="pictures/1.jpg" style="width:100%" alt="Picture of sisi my dog, on a leash">
+                          <img src="pictures/cc.jpg" style="width:100%" alt="Picture of sisi my dog, laying on grass">
+                      </div>
+                    </div>
+
+    <!--THE BUTTON THAT TAKES YOU BACK TO TOP once you click on it--> 
+    
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    
+       
+</body>
+</html>
+    

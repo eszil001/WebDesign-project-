@@ -1,0 +1,158 @@
+
+
+/*------------------------------            THE PAGES LAYOUT           ------------------------------------*/
+{
+  margin: 0;
+  padding: 0;
+}
+/* changes the bar position 0px being stuck right to the top*/
+nav {
+  margin: 40px;
+}
+ /* property specifies what happens if content overflows an element, in this case it overlaps */
+
+ul {
+overflow: auto;
+list-style-type: none;
+}
+ 
+/*makes the "links" all stay in line and spaced out */
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}
+
+/*adds the font "indie flower", while transitions */
+ 
+li a {
+  text-decoration: none;
+  color: #808080;
+  font: 25px/1 'Indie Flower', cursive;
+  text-transform: uppercase;
+ 
+
+}
+
+ /* on hover makes the colours more pigmented to a darker red */
+li a:hover {
+  color: #800000;
+}
+ /* makes the open page "link name" be black ( darker than the rest), so i know which page i am on */
+li.active a {
+  font-weight: bold;
+  color: #333;
+}
+
+/* when you make the page smaller the names for links in the navigation bar will automatically go under eachother */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* the background colour is picked here and the font for the webpage */
+body {
+  font: 14px/1 'Indie Flower', cursive;
+  color: #555;
+  background-image: url(https://media.istockphoto.com/photos/white-squared-paper-sheet-texture-background-picture-id529921367?k=6&m=529921367&s=612x612&w=0&h=kEau000qngeXH5R9JC1GsPHBJ9wmCV1SOqAfFOzRrTc=);
+  height:100%;
+  background-size:20px 20px;
+}
+
+
+
+/*   ----------------------          THE TEXTS            --------------------------*/
+h2 {
+  margin: 7px 0;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  
+} 
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  
+}
+
+p {
+    margin: 10px;
+    font-size: 22px;
+    font-weight: 100;
+    text-align: left;
+}
+h3 {
+    margin: 50px;
+    font-size: 23px;
+    font-weight: 100;
+    text-align: left;
+}
+font-family: 'Indie Flower', cursive;
+
+
+/*  ---------------            THE PICTURES FOR PAGE 1 STORY make the text go around it hence the float tag is used           -------------------------------*/
+
+body {
+	background: #e6e7e8;
+	height: 100vh;
+	text-align: center;
+  
+}
+
+.float-img {
+    float:left; 
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 400;
+    border: 30px ridge white;
+}
+.float-img1 {
+    float:right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 400;
+    border: 30px ridge white;
+}
+
+/*  ---------------            THE PICTURES FOR PAGE 2 SISI  makes text go around it           -------------------------------*/
+
+.float-img2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 400;
+    border: 30px ridge white;
+}
+
+
+/*  ---------------            THE BUTTON TO GO UP           -------------------------------*/
+ #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 100px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+    
+
+    
+    

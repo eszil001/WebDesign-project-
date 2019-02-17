@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title> The past </title>
+     <!--the links i need for this--> 
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+   
+   
+    <!--THE BUILT IN ACCORDION: INSPIRED FROM THE LESSONS--> 
+    
+            <script>
+                $(document).ready(function(){
+                //Using the built-in "accordion" function to make things collapse and appear as required. Needs you to use SEPERATE DIVS and H3 to provide clickable titles.
+
+
+                    $( "#accordion" ).accordion();
+
+
+                    
+
+                });
+
+           </script>
+      <!--THE BUTTON THAT TAKES YOU BACK TO TOP-->
+           <script>
+    
+                // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+    
+         </script>
+     <!--tHE BLUR FOR THE GRAPHIC PICTURE OF SISI AFTER OPERATION-->
+    <style>
+                .graphicpic {
+                -webkit-filter: blur(20px) grayscale(.5);
+                -webkit-transition-property: -webkit-filter;
+                -webkit-transition-duration: .4s;
+            }
+/*        when you hover over it with your mouse it will show the picture */
+            .graphicpic:hover, .graphicpic:focus {
+                -webkit-filter: blur(0px) grayscale(0);
+            }
+
+            
+
+    </style>
+    <!--USING SOME INTERNAL STYLE: FELXIBLE BOX-->
+    <style>
+                    * {
+                        box-sizing: border-box;
+                    }
+
+
+
+                    .row {
+                        display: -ms-flexbox; /* IE10 */
+                        display: flex;
+                        -ms-flex-wrap: wrap; /* IE10 */
+                        flex-wrap: wrap;
+                        padding: 0 4px;
+                    }
+
+                    /* Create four equal columns that sits next to each other */
+                    .column {
+                        -ms-flex: 25%; /* IE10 */
+                        flex: 25%;
+                        max-width: 25%;
+                        padding: 0 4px;
+                    }
+
+                    .column img {
+                        margin-top: 8px;
+                        vertical-align: middle;
+                    }
+
+                    /* Responsive layout - makes a two column-layout instead of four columns */
+                    @media (max-width: 800px) {
+                        .column {
+                            -ms-flex: 50%;
+                            flex: 50%;
+                            max-width: 50%;
+                        }
+                    }
+
+                    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                    @media (max-width: 600px) {
+                        .column {
+                            -ms-flex: 100%;
+                            flex: 100%;
+                            max-width: 100%;
+                        }
+                    }
+    </style>
+
+</head>
+    
+    
+<body>
+     <!--THE NAVIGATION BUTTONS--> 
+
+                <nav>
+                  <ul>
+                        <li><a href="index.html">Sisi</a></li>
+                        <li><a href="story.html">The Story</a></li>
+                        <li class="active"><a href="then.html">The past</a></li>
+                        <li><a href="now.html">The present</a></li>
+                  </ul>
+                </nav>
+     <!--HEADER--> 
+                            <h1>The story of a blind dog</h1>
+
+    
+    
+    <!--The picture gallery, which is flexible when you make screen smaller--> 
+    
+    <div class="row"> 
+                      <div class="column">
+                        <img src="pictures/11.jpg" style="width:100%" alt="Picture of sisi my dog, playing with her toy">
+                    
+                    
+                      </div> 
+                      <div class="column">
+                        <img src="pictures/12.jpg" style="width:100%" alt="Picture of sisi my dog, playing with her toy">
+                      </div> 
+                      <div class="column">
+                        <img src="pictures/MTXX_20170124_175430.jpg" style="width:100%" alt="Picture of sisi my dog, with my ginger cat">
+                    
+                      </div> 
+                     <div class="column">
+                        <img src="pictures/2012-07-29%2020.38.17.jpg" style="width:100%"  alt="Picture of sisi my dog, laying on grass">
+                       
+                    
+                      </div>  
+                      </div>
+      <!--THE BUILT IN ACCORDION: INSPIRED FROM THE LESSONS--> 
+    
+    
+                     <div id="accordion">
+                  <h3>How it happened?</h3>
+                  <div>
+                    <p>
+                  It happened overnight one day she is fine playing, jumping and running, second day she is visibly sadder, as the sadness progressed we then realized she has a white spot on her right eye, we then took her to the vet, which prescribed us some medication. Sisi took that medication for 1 week she was feeling better, however suddenly the second eyes had the spot, and her pupils started to get bigger. Calling the doctor suggested to take her to a special vet which after the consultation said: The right eye has 70% pressure and it cant be saved, however the left eye they could try to save it, but the chances are small, and she would have to live on medication for 1-2 years till her eye would give up and then it will need to be removed.
+                    </p>
+                    <p>   
+                  There was no good option they all lead to the same result which meant blindness.
+
+                        
+                    </p>
+                  </div>
+                  <h3>Why it happened?</h3>
+                  <div>
+                    <p>
+                   Usually it happens from an accident, such as falling or similar things in dogs case, but as the Vet said Sisis was genetic, is possible that her brothers maybe suffering from this too. But is a good thing, that she has been spayed otherwise her babies would have carried this gene, which unfortunately is common in terrier breeds. 
+                    </p>
+                    <p>
+                      It can happen overnight just like it happened for Sisi, and in some cases can take 2 months or more to develop into blindness and some can even be 2 weeks.
+                    </p>
+                  </div>
+                  <h3>What is Glaucoma?</h3>
+                  <div>
+                    <p>
+                   Glaucoma is a condition in which pressure is placed on the eye, causing fluid drainage in the eye. If the condition becomes chronic or persists without treatment, it will eventually cause permanent damage to the optic nerve, resulting in blindness.  Symptoms,are as follows:
+                    </p>
+                    <p>
+                    High pressure within the eye
+                    </p>
+                    <p>
+                    Dilated pupil or pupil does not respond to light
+                    </p>
+                    <p>
+                    Cloudy appearance at front of the eye
+                    </p>
+                    <p>
+                    Vision loss
+                    </p>
+                    
+                  </div>
+                  <h3>What is Lens luxation?</h3>
+                  <div>
+                    <p>
+                   Many cases of lens luxation are hereditary and caused by a weakness in the threads holding the lens in place. This condition is called primary lens luxation and is common in the Jack Russell and other terriers. It is also occasionally seen in other breeds and crossbreeds, unfortunately primary lens luxation affects both eyes, although not necessarily at the same time. 
+                    </p>
+                    <p>
+                    In dogs suffering from lens luxation (dislocation), such as in Sisis case,  the lens shifts out of position and moves either into the front or into the back of the eye. If the lens becomes trapped in the front of the eye, it can cause water-logging of the window of the eye and an increase in pressure within the eye (glaucoma).
+                    </p>
+                  
+                  </div>
+                 <h3>Why Eye Removal? CONTAINS GRAPHIC IMAGES</h3>
+                  <div>
+                    <p>
+                    Eyes that have lost vision irreversibly due to lens luxation are not suitable for lens removal. Because many eyes with lens luxation are painful, it may be necessary to consider removal of the eye under these circumstances.
+                    </p>
+                    <p>
+                    She didnt see anymore, it was the best option in order for her to continue living  a happy and healthy life, regardless she has us and we can be her eyes.
+                    </p>
+                    <!--the picture becomes clear when you hover over it-->   
+                    <img src="pictures/20.jpg" alt="Sisi after eye removal surgery" class="graphicpic" style="width:250px;" tabIndex="0" />
+                  </div>
+                </div>
+    
+    <!--THE BUTTON THAT TAKES YOU BACK TO TOP when you click on it--> 
+    
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+    
+       
+</body>
+</html>
+    
